@@ -9,6 +9,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 **Built by:** Trang Nguyen | Double Degree in Computer Science & Business (Business Analytics) - NTU Singapore
+
 **Project Type:** Capstone Analytics Platform  
 **Industry:** Aviation Operations & Food Service
 
