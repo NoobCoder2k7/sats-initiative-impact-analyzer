@@ -10,6 +10,7 @@ covering trade routes responsible for over 50% of global air cargo volume.
 However, SATS faces several operational and financial challenges:
 
 **1. Margin Pressure from Revenue Mix Shifts**
+
 SATS' FY2025 annual report highlights "margin pressures in cargo handling business 
 due to a less favorable revenue mix and reduced high-margin e-commerce volumes." 
 With trade tensions impacting air cargo demand (tariffs on imports from China, Mexico, 
@@ -17,17 +18,20 @@ Canada; 25% tariff on steel imports), optimizing resource allocation toward high
 opportunities is critical.
 
 **2. Network Integration & Operational Consistency**
+
 Having "successfully integrated WFS," SATS is "optimistic about leveraging its 
 extensive network for more commercial wins." However, with 225 stations across diverse 
 regions, regulatory environments, and operational contexts, ensuring consistent 
 performance measurement and knowledge transfer is challenging.
 
 **3. Demand Volatility & Forecasting Under Uncertainty**
+
 External factors (trade policies, shipping disruptions, geopolitical situations) 
 create unpredictable demand patterns. SATS needs to adapt operations quickly while 
 avoiding costly waste from overproduction or service failures from underproduction.
 
 **4. Investment Prioritization Amid Cost Pressures**
+
 With margin pressure, every operational investment (new technology, process changes, 
 training programs) must demonstrate clear ROI. Without rigorous measurement, it's 
 difficult to know which initiatives deliver value and should be scaled vs. discontinued.
