@@ -8,7 +8,7 @@
 [![Azure SQL](https://img.shields.io/badge/Azure-SQL%20Database-blue.svg)](https://azure.microsoft.com/en-us/services/sql-database/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-**Built by:** Trang Nguyen | NTU Computer Science & Business Analytics  
+**Built by:** Trang Nguyen | Double Degree in Computer Science & Business (Business Analytics) - NTU Singapore
 **Project Type:** Capstone Analytics Platform  
 **Industry:** Aviation Operations & Food Service
 
