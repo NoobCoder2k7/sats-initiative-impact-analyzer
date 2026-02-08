@@ -1,0 +1,175 @@
+# Metrics Definitions
+## SATS Initiative Impact Analyzer
+
+### Primary Business Metrics
+
+#### 1. Incremental Demand Lift (%)
+**Definition**: Percentage change in meal consumption attributable to the initiative, 
+isolated from seasonal and baseline trends.
+
+**Calculation**:
+```
+Incremental Lift = ((Treatment_Post - Treatment_Pre) - (Control_Post - Control_Pre)) / Control_Pre × 100
+```
+
+**Interpretation**:
+- Positive value: Initiative increased demand efficiency
+- Negative value: Initiative reduced waste (fewer meals needed)
+- Example: -8.5% means initiative reduced required meals by 8.5%
+
+**Target**: -8% to -12% (waste reduction while maintaining service)
+
+---
+
+#### 2. Waste Reduction (Units & SGD)
+**Definition**: Decrease in uneaten meals (units) and associated cost savings (SGD).
+
+**Calculation**:
+```
+Waste Units = meals_produced - meals_consumed
+Waste Cost (SGD) = Waste Units × cost_per_meal
+Monthly Savings = (Baseline_Waste_Cost - Post_Initiative_Waste_Cost) × 30 days
+```
+
+**Target**: 
+- 15-20% reduction in waste units
+- $40K-60K monthly cost savings (Singapore operations)
+
+---
+
+#### 3. Revenue Impact (SGD)
+**Definition**: Financial value generated from improved meal planning and service quality.
+
+**Components**:
+- Direct savings: Reduced waste disposal costs
+- Indirect savings: Less overproduction = lower procurement costs
+- Service value: Maintained/improved passenger satisfaction (no shortages)
+
+**Calculation**:
+```
+Revenue Impact = Waste Savings + Procurement Savings + (Service_Level × Penalty_Avoidance)
+```
+
+**Target**: $50K-70K monthly total revenue impact
+
+---
+
+#### 4. Return on Investment (ROI)
+**Definition**: Ratio of financial benefit to initiative cost.
+
+**Calculation**:
+```
+ROI = (Total Annual Benefit - Initiative Cost) / Initiative Cost
+```
+
+**Components**:
+- Benefit: Waste savings + procurement savings (annualized)
+- Cost: Algorithm development + training + implementation
+
+**Target**: >10x ROI (every $1 invested generates $10+ return)
+
+---
+
+### Secondary Operational Metrics
+
+#### 5. Forecast Accuracy (%)
+**Definition**: How closely predicted demand matches actual consumption.
+
+**Calculation**:
+```
+Forecast Accuracy = 1 - (|Actual - Forecast| / Actual) × 100
+```
+
+**Target**: 
+- Baseline: 88%
+- Post-initiative: 94%+
+
+---
+
+#### 6. Service Level (%)
+**Definition**: Percentage of flights where meal demand was fully met (no shortages).
+
+**Calculation**:
+```
+Service Level = (Flights with meals_produced ≥ meals_consumed) / Total Flights × 100
+```
+
+**Target**: ≥95% (maintain or improve during waste reduction)
+
+---
+
+#### 7. Statistical Significance
+**Definition**: Probability that observed effects are real, not random chance.
+
+**Method**: 
+- Difference-in-differences regression with 95% confidence intervals
+- p-value < 0.05 for statistical significance
+
+**Reporting**:
+- Effect estimate (e.g., -8.5% waste reduction)
+- Confidence interval (e.g., [-10.2%, -6.8%])
+- Significance indicator (✓ or ✗)
+
+---
+
+### Data Quality Metrics
+
+#### 8. Data Quality Score (%)
+**Definition**: Composite score measuring data reliability.
+
+**Components**:
+- Completeness: % non-null in critical fields (target: 98%+)
+- Accuracy: % passing business rule validation (target: 95%+)
+- Timeliness: Data age <24 hours (target: 100%)
+- Consistency: % valid foreign keys (target: 99%+)
+
+**Overall Score**: Average of component scores
+
+---
+
+### Experiment-Specific Metrics
+
+#### 9. Treatment Effect
+**Definition**: Difference in outcomes between treatment and control groups in post-period.
+
+**Formula**:
+```
+Treatment Effect = Avg(Treatment_Post) - Avg(Control_Post)
+```
+
+**Usage**: Isolates initiative impact from external factors
+
+---
+
+#### 10. Baseline Comparison
+**Definition**: Performance delta vs. pre-initiative period.
+
+**Formula**:
+```
+Baseline Improvement = (Post_Period_Avg - Pre_Period_Avg) / Pre_Period_Avg × 100
+```
+
+**Note**: Can be misleading due to seasonality; use DiD for causal interpretation
+
+---
+
+### Reporting Cadence
+
+**Daily**: Data quality score, data freshness
+**Weekly**: Waste trends, forecast accuracy
+**Monthly**: Financial impact, ROI calculation
+**Quarterly**: Executive summary, initiative recommendations
+
+---
+
+### Metric Ownership
+
+| Metric | Owner | Use Case |
+|--------|-------|----------|
+| Incremental Lift | Analytics Team | Causal impact measurement |
+| Waste Reduction | Finance Team | Cost tracking |
+| Revenue Impact | Finance Team | Business case validation |
+| ROI | CFO | Investment decisions |
+| Forecast Accuracy | Operations Team | Process improvement |
+| Service Level | Operations Team | Quality monitoring |
+| Data Quality Score | Data Steward | Platform reliability |
